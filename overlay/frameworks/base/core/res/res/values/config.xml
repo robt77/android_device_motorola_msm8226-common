@@ -234,6 +234,7 @@
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true-->
+    <string name="config_perf_profile_prop">sys.perf.profile</string>
     <bool name="skip_restoring_network_selection">true</bool>
 
     <!-- Maximum number of supported users -->
