@@ -61,7 +61,7 @@ on init
 
     # Symbols required for motorola blobs
     export LD_PRELOAD "/system/lib/libmoto.so /system/lib/libboringssl-compat.so /system/vendor/lib/libsysutils_local.so"
-    
+
 on fs
     mount_all fstab.qcom
     write /sys/kernel/boot_adsp/boot 1
