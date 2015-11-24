@@ -79,7 +79,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libboringssl-compat \
+    camera.msm8226 \
     libxml2
 
 # Display
@@ -99,6 +99,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     setup_fs
 
+# FM
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -127,7 +131,11 @@ PRODUCT_COPY_FILES += \
 
 # Motorola
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
     libmoto
+=======
+    libmoto_log
+>>>>>>> cm/cm-13.0
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -152,8 +160,9 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
+    init.qcom.fm.sh \
     init.qcom.ril.sh \
-    mount_pds.sh
+    dump_pds.sh
 
 PRODUCT_PACKAGES += \
     init.mmi.boot.sh \
