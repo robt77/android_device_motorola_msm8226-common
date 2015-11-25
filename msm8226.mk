@@ -135,11 +135,7 @@ PRODUCT_COPY_FILES += \
 
 # Motorola
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
-    libmoto
-=======
     libmoto_log
->>>>>>> cm/cm-13.0
 
 # OMX
 PRODUCT_PACKAGES += \
