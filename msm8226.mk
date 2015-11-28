@@ -104,9 +104,9 @@ PRODUCT_PACKAGES += \
     setup_fs
 
 # FM
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
+#PRODUCT_PACKAGES += \
+ #   FMRadio \
+  #  libfmjni
 
 # GPS
 PRODUCT_PACKAGES += \
