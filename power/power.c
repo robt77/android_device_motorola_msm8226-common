@@ -45,7 +45,7 @@ enum {
     PROFILE_MAX
 };
 
-static pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+static pthread_mutex_t lock;
 static int boostpulse_fd = -1;
 static int current_power_profile = -1;
 
