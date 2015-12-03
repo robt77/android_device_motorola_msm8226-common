@@ -126,10 +126,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
-# Motorola
-PRODUCT_PACKAGES += \
-    libmoto_log
-
 # OMX
 PRODUCT_PACKAGES += \
     libdashplayer \
