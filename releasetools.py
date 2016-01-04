@@ -45,6 +45,8 @@ def AddRadioAssertion(info, input_zip):
     cmd = ("assert(" +
            " || ".join(['getprop("ro.boot.radio") == "%s"' % (r,)
                          for r in radios]) +
-           ' || abort("CDMA devices are not supported at the moment.");' +
+           ' || abort("This package supports radio(s): ' +
+           ", ".join(["%s" % (r,) for r in radios]) +
+           '; this device has radio " + getprop("ro.boot.radio") + ".");' +
            ");")
     info.script.AppendExtra(info.script.WordWrap(cmd))
