@@ -48,8 +48,8 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_DTBTOOL_ARGS := --force-v2
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8226
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
-
+KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-5.3-cortex-a7/bin"
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-smd"
 
