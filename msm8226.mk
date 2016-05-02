@@ -161,7 +161,6 @@ PRODUCT_PACKAGES += \
     init.mmi.boot.sh \
     init.mmi.touch.sh \
     init.qcom.rc \
-    init.qcom.ssr.sh \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
